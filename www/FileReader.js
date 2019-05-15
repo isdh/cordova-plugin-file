@@ -49,7 +49,7 @@ var FileReader = function () {
  * (Note attempts to allocate more than a few MB of contiguous memory on the native side are likely to cause
  * OOM exceptions, while the JS engine seems to have fewer problems managing large strings or ArrayBuffers.)
  */
-FileReader.READ_CHUNK_SIZE = 256 * 1024;
+FileReader.READ_CHUNK_SIZE = 10 * 1024 * 1024;
 
 // States
 FileReader.EMPTY = 0;
